@@ -7,17 +7,25 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">John Doe</div>
+        <div class="logo">BOSQUE DOS LIVROS</div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">HOME</a></li>
             <li><a href="#experience">SOBRE NÓS</a></li>
             <li><a href="#projects">CONTATOS</a></li>
+            <li><a href="#signup">SIGN UP</a></li>
           </ul>
         </div>
       </nav>
       <main>
-        
+        <h2>LOGIN</h2>
+          <form method="post" action="Login.aspx">
+              <label for="username">CPF:</label>
+              <input type="text" id="username" name="username" required><br><br>
+              <label for="password">SENHA:</label>
+              <input type="password" id="password" name="password" required><br><br>
+              <input type="submit" value="LOGIN">
+         </form>
       </main>
 </body>
 </html>
