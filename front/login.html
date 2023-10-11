@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Bosque dos Livros</title>
 </head>
 <body>
-  <main
-    <nav id="desktop-nav">
-        <div class="logo">BOSQUE DOS LIVROS</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">HOME</a></li>
-            <li><a href="#experience">SOBRE NÓS</a></li>
-            <li><a href="#projects">CONTATOS</a></li>
-            <li><a href="#signup">SIGN UP</a></li>
-          </ul>
-        </div>
-      </nav>
-        <h1>FAÇA SEU LOGIN</h1>
-          <form method="post" action="Login.aspx">
-              <label for="username">CPF:</label>
-              <input type="text" id="username" name="username" required><br><br>
-              <label for="password">SENHA:</label>
-              <input type="password" id="password" name="password" required><br><br>
-              <input type="submit" value="LOGIN">
-         </form>
-      </main>
+    <header class="header">
+        <h3 class="titulo">BOSQUE DOS LIVROS</h3>
+        <a class="header__link" href="#about">HOME</a>
+        <a class="header__link"  href="#experience">SOBRE NÓS</a>
+        <a class="header__link" href="#projects">CONTATOS</a>
+        <a class="header__link__sign" type="submit" href="#signup">SIGN UP</a>
+    </header>
+    <main class="apresentacao">
+        <h1 class= "login">FAÇA SEU LOGIN</h1>
+        <form method="post" action="Login.aspx">
+            <label for="username"> CPF:</label>
+            <input class= "login_caixa" type="text" id="username" name="username" required><br><br>
+            <label for="password"> SENHA:</label>
+            <input class="login_caixa" type="password" id="password" name="password" required><br><br>
+            <input class= "botao__entrar" type="submit" value="ENTRAR">
+       </form>
+    </main>
+    <footer></footer>
 </body>
 </html>
