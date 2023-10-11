@@ -1,62 +1,76 @@
-*{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
     margin: 0;
+    padding: 0;
 }
 
-nav,
-.nav-links , .conteiner-acess, .acess-button {
+body {
+    background-color: white;
+    }
+
+.header {
+  padding: 3%;
+  background-color: aquamarine;
   display: flex;
-}
-
-nav {
-  justify-content: space-around;
   align-items: center;
-  height: 17vh;
-  background-color: #315604;
+  justify-content: space-between;
 }
 
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
+.header__link {
+ text-decoration: none;
+ color: black;
 }
 
-a {
+.header__link__sign {
   color: black;
+  background-color: white;
   text-decoration: none;
-  text-decoration-color: white;
-}
-
-a:hover {
-  color: #599C08;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(89, 156, 8 );
-}
-.conteiner-acess{
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: end;
- width: 160px 120px 160px 120px;
+  width: 100px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 10px 0;
 
 }
 
-.acess-button{
-  font-size: 1.5rem;
-  flex-direction: column;
-  
+.apresentacao {
+ padding: 100px 200px;
+ width: 600px;
+ text-align: center;
 }
 
-button{
-  border-radius: 5px;
-  width: 80 60 80 60;
-  padding: 10%;
-  color: #000;
-  text-decoration: none;
- 
-  
+.titulo {
+  font-family: 'Dancing Script', cursiva;
+  font-size: 40px;
 }
-button:hover{
-  color: #599C08;
- 
+
+.login {
+  font-size: 30px;
+  text-align: center;
+}
+
+.login_caixa {
+  background-color: aquamarine;
+  width: 500px;
+  text-align: center;
+  border-radius: 16px;
+  font-weight: 100;
+  padding: 10px 0;
+
+}
+
+.login_info {
+  font-size: 20px;
+}
+
+.botao__entrar {
+  background-color: aquamarine;
+  width: 100px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 10px 0;
 }
