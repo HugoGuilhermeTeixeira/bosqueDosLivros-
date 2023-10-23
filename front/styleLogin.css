@@ -60,27 +60,41 @@ body {
 }
 
 .login_caixa {
+  font-family: 'Rajdhani',sans-serif ;
   background-color: aquamarine;
   width: 500px;
   text-align: center;
   border-radius: 16px;
   font-weight: 100;
   padding: 10px 0;
+  border: 5px solid aquamarine;
 
 }
 
 .login_info {
   font-family: 'Rajdhani',sans-serif ;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .botao__entrar {
+  font-family: 'Rajdhani',sans-serif ;
+  font-size: 20px;
+  font-weight: 500;
   background-color: aquamarine;
   width: 100px;
   text-align: center;
   border-radius: 16px;
-  font-size: 14px;
-  font-weight: 100;
   padding: 4%;
+  border: 5px solid aquamarine;
+}
+
+.total {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10%;
 }
 
