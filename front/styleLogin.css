@@ -18,17 +18,18 @@ body {
   justify-content: space-between;
 }
 
+a:hover {
+color: grey;
+text-decoration: underline;
+text-underline-offset: 1rem;
+text-decoration-color: rgb(181, 181, 181);
+}
 
 .header__link {
  text-decoration: none;
  color: black;
  font-family:'Rajdhani',sans-serif ;
  font-size: 18px;
-}
-
-.header__link__sign:hover {
-  padding: 1%;
-  background-color: whitesmoke;
 }
 
 .header__link__sign {
