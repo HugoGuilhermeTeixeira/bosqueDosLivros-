@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Dancing+Script:wght@700&family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Dancing+Script:wght@700&family=Mystery+Quest&family=Rajdhani:wght@300;400;500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+}
+
+a:hover {
+color: grey;
+text-decoration: underline;
+text-underline-offset: 1rem;
+text-decoration-color: rgb(181, 181, 181);
 }
 
 body {
@@ -18,8 +26,10 @@ body {
 }
 
 .header__link {
- text-decoration: none;
- color: black;
+  text-decoration: none;
+  color: black;
+  font-family:'Rajdhani',sans-serif ;
+  font-size: 18px;
 }
 
 .header__link__sign {
@@ -29,9 +39,10 @@ body {
   width: 100px;
   text-align: center;
   border-radius: 16px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 100;
   padding: 10px 0;
+
 
 }
 
@@ -42,8 +53,8 @@ body {
 }
 
 .titulo {
-  font-family: 'Dancing Script', cursiva;
-  font-size: 40px;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 30px;
 }
 
 .login {
