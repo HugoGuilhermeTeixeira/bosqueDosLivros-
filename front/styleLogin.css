@@ -18,11 +18,17 @@ body {
   justify-content: space-between;
 }
 
+
 .header__link {
  text-decoration: none;
  color: black;
  font-family:'Rajdhani',sans-serif ;
  font-size: 18px;
+}
+
+.header__link__sign:hover {
+  padding: 1%;
+  background-color: whitesmoke;
 }
 
 .header__link__sign {
@@ -130,4 +136,3 @@ img {
  width: 4%;
  height: 4%;
 }
-
