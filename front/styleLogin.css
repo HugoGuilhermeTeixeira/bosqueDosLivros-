@@ -33,6 +33,8 @@ text-decoration-color: rgb(181, 181, 181);
 }
 
 .header__link__sign {
+  font-family:'Rajdhani',sans-serif ;
+  font-size: 18px;
   color: black;
   background-color: white;
   text-decoration: none;
@@ -40,7 +42,7 @@ text-decoration-color: rgb(181, 181, 181);
   text-align: center;
   border-radius: 16px;
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300px;
   padding: 10px 0;
 
 }
@@ -87,13 +89,14 @@ text-decoration-color: rgb(181, 181, 181);
 .botao__entrar {
   font-family: 'Rajdhani',sans-serif ;
   font-size: 20px;
-  font-weight: 500;
-  background-color: aquamarine;
+  font-weight: 300px;
+  background-color: black;
+  color: white;
   width: 100px;
   text-align: center;
   border-radius: 16px;
   padding: 4%;
-  border: 5px solid aquamarine;
+  border: none;
 }
 
 .total {
