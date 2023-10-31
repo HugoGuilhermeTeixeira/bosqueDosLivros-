@@ -14,8 +14,12 @@ text-decoration-color: rgb(181, 181, 181);
 }
 
 body {
-    background-color: white;
-    }
+
+  background-image: url("back2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .header {
   padding: 3%;
@@ -33,15 +37,16 @@ body {
 }
 
 .header__link__sign {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   text-decoration: none;
   width: 100px;
   text-align: center;
   border-radius: 16px;
   font-size: 15px;
   font-weight: 100;
-  padding: 10px 0;
+  padding: 1%;
+  border: none;
 
 
 }
@@ -55,6 +60,18 @@ body {
 .titulo {
   font-family: 'Cinzel', sans-serif;
   font-size: 30px;
+}
+
+.titulo2 {
+  font-family: 'Rajdhani',sans-serif ;
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  
+
 }
 
 .login {
@@ -76,12 +93,119 @@ body {
   font-size: 20px;
 }
 
-.botao__entrar {
+.search-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pesquisar{
+  width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.pesquisarbotao {
+  font-family: 'Rajdhani',sans-serif ;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  background-color:black;
+  width: 150px;
+  border-radius: 15px;
+  padding: 1%;
+  border: none;
+
+}
+
+nav{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.book {
+  
   background-color: aquamarine;
+  border: 1px solid aquamarine; 
+  border-radius: 5px;
+  margin: 10px;
+  padding: 30px;
+  width: 30%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family:'Rajdhani',sans-serif ;
+}
+
+.book img {
+  width: 50%;
+}
+
+.book h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.buttonadquirir {
+  background-color: black;
+  color: white;
   width: 100px;
+  height: 40px;
   text-align: center;
   border-radius: 16px;
   font-size: 14px;
-  font-weight: 100;
-  padding: 10px 0;
+  font-weight: bold; 
+  padding: 3%;
+}
+
+.geral_footer {
+  justify-content: center;
+  padding: 2%;
+  background-color: black; 
+  align-items: center;
+  place-items: center;
+}
+
+.footer_div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  text-align: center;
+  align-items: center;
+
+}
+
+.link_footer {
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family:'Rajdhani',sans-serif ;
+  font-size: 18px;
+  place-items: center;
+}
+
+
+img {
+ width: 4%;
+ height: 4%;
 }
