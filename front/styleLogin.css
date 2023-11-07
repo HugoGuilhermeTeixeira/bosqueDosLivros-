@@ -110,7 +110,11 @@ text-decoration-color: rgb(181, 181, 181);
 
 .geral_footer {
   justify-content: center;
-  padding: 2%;
+  padding: 1% 0 1% 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
   background-color: black; 
   align-items: center;
   place-items: center;
@@ -120,6 +124,7 @@ text-decoration-color: rgb(181, 181, 181);
   display: flex;
   justify-content: space-between;
   padding: 1%;
+  margin: 0;
   text-align: center;
   align-items: center;
 
