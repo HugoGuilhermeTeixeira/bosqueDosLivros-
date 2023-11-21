@@ -1,6 +1,6 @@
 <?php
     // Incluir o arquivo de conexão com o banco de dados
-    include("conexao.php");
+    include("connect.php");
     // Receber os dados do formulário
     $nome = $_POST["nome"];
     $cpf  =$_POST["cpf"];
@@ -12,7 +12,8 @@
     // Verificar se o usuário já existe
     $sql = "SELECT * FROM usuarios WHERE email = '$email'";
 $resultado = mysqli_query($conexao, $sql);
-if (mysqli_num_rows($resultado) > 0) { echo "O usuário já existe.";
+if (mysqli_num_rows($resultado) > 0) { 
+    echo "O usuário já existe.";
 } else { 
      // O usuário não existe, então cadastrar
     $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
