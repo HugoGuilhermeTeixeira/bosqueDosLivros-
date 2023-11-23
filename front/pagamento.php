@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>Página de Pagamento</title>
-    <style>
+    
+</head>
+<body>
+<style>
         body {
             font-family: Arial, sans-serif;
         }
@@ -37,8 +40,6 @@
              Cor de fundo: #45a049;
         }
     </style>
-</head>
-<body>
     <div class="container">
         <h2>Detalhes do Pagamento</h2>
         <Ação de formulário="/Enviar-pagamento" método="marcar">

@@ -4,8 +4,10 @@ $sevidor = "localhost";
 $dbusuario = "root";
 $dbsenha = "";
 $dbname = "bosqueDosLivros";
-$conn = mysqli_connect($sevidor, $dbusuario, $dbsenha, $dbname);
 
+$mysqli = new mysqli($servername, $username, $password, $dbname);
 
+if ($mysqli->connect_error) {
+    die("Falha na conexão: " . $mysqli->connect_error);
 
 ?>
