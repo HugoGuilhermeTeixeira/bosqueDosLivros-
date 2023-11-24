@@ -8,6 +8,8 @@
 
 body {
     background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
     .header {
@@ -122,17 +124,15 @@ body {
   font-weight: 500;
 }
 
-.botao__entrar {
-  font-family: 'Rajdhani',sans-serif ;
-  font-size: 20px;
-  font-weight: 300px;
-  background-color: black;
-  color: white;
-  width: 100px;
-  text-align: center;
-  border-radius: 16px;
-  padding: 4%;
-  border: none;
+button{
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-family:'Rajdhani', sans-serif; 
+    font-size: 20px;;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
 }
 
 .total {
