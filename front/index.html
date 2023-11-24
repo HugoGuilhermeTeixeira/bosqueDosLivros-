@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script
+    src="https://kit.fontawesome.com/ea97a3051d.js"
+    crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Bosque dos Livros</title>
+    <title>Inicio</title>
 </head>
-<body>
     <header class="header">
-        <h3 class="titulo">BOSQUE DOS LIVROS</h3>
-        <a class="header__link" href="#about">HOME</a>
-        <a class="header__link" href="#experience">SOBRE NÓS</a>
-        <a class="header__link" href="#projects">CONTATOS</a>
-        <button class="header__link__sign">SIGN IN</button>
-        <button class="header__link__sign">SIGN UP</button>
-    </header>
+        <span class="logo">
+          <i class="fa-solid fa-book-bookmark"></i>
+          <h3 class="titulo">BOSQUE DOS LIVROS</h3>
+        </span>
+        <div class="navigations">
+          <a id="focused" class="header__link" href="#about">
+            <i class="fa-solid fa-house"></i>HOME
+          </a>
+          <a class="header__link" href="#experience">
+            <i class="fa-solid fa-address-card"></i>SOBRE NÓS</a
+          >
+          <a class="header__link" href="#projects">
+            <i class="fa-solid fa-envelope"></i>CONTATOS</a
+          >
+        </div>
+        <a class="header_link_sign" type="submit" href="#signup"> SIGN UP </a>
+      </header>
+      <body>
         <nav>
             <h1 class="titulo2">PESQUISE UM LIVRO</h1>
+            <br>
             <div class="search-container">
                 <form action="resultado_pesquisa.aspx" method="GET">
                     <input type="text" class="pesquisar" name="q" placeholder="Pesquise aqui..." />
@@ -29,7 +43,10 @@
           <img src="livro1.png" alt="Livro 1">
           <h2>"É Assim que Acaba"</h2>
           <p>Autor: Collen Hoover</p>
-          <p>Gênero:Romance/Drama</p>
+          <p>Gênero: Romance/Drama</p>
+          <p>Editora: Galera Record</p>
+          <p>Sinopse:"Quando os dois se apaixonam, Lily se vê no meio de um relacionamento turbulento que não é o que ela esperava. Mas será que ela conseguirá enxergar isso, por mais doloroso que seja? É assim que acaba é uma narrativa poderosa sobre a força necessária para fazer as escolhas certas nas situações mais difíceis."</p>
+          <br>
           <button class="buttonadquirir">Adquirir</button>
       </section>
       <section class="book">
@@ -37,6 +54,9 @@
           <h2>"Mentirosos"</h2>
           <p>Autor: E. Lockhart </p>
           <p>Gênero: Suspense</p>
+          <p>Editora: Seguinte</p>
+          <p>Sinopse: "Durante o verão de seus quinze anos, as férias idílicas de Cadence são interrompidas quando a garota sofre um estranho acidente. Ela passa os próximos dois anos em um período conturbado, com amnésia, depressão, fortes dores de cabeça e muitos analgésicos."</p>
+          <br>
           <button class="buttonadquirir">Adquirir</button>
       </section>
       <section class="book">
@@ -44,24 +64,103 @@
         <h2>"Crepúsculo"</h2>
         <p>Autor: Stephenie Meyer"</p>
         <p>Gênero: Romance</p>
+        <p>Editora: Intrinseca</p>
+        <p>Sinopse: "A estudante Bella Swan conhece Edward Cullen, um belo mas misterioso adolescente. Edward é um vampiro, cuja família não bebe sangue, e Bella, longe de ficar assustada, se envolve em um romance perigoso com sua alma gêmea imortal."</p>
+        <br>
         <button class="buttonadquirir">Adquirir</button>
-    </section>
-    <section class="book">
+  </section>
+  <section class="book">
       <img src="livro4.png" alt="Livro 4">
       <h2>"1984"</h2>
       <p>Autor: George Orwell</p>
       <p>Gênero: Ficção científica</p>
+      <p>Editora: Grupo Companhia das Letras</p>
+      <p>Sinopse: "O livro tratou de forma ficcional o tema do totalitarismo, assunto em voga em 1984, bem como comunismo, política, política, nazifascismo, tortura, etc. A prática foi semelhante à da União Soviética. Documentos históricos eram falsificados para moldar o passado em função dos interesses da tirania no poder."</p>
+      <br>
       <button class="buttonadquirir">Adquirir</button>
   </section>
-    </main>
-
-<footer class="geral_footer">
-        <div class="footer_div"> 
-            <a class="link_footer" href="https://web.whatsapp.com/"> <img src="WHATS.png"> WHATSAPP</a>
-             <a class="link_footer" href="https://instagram.com/"> <img src="insta.png"> INSTAGRAM</a>
-              <a class="link_footer" href="https://gmail.com/"> <img src="gmail.png"> GMAIL</a>
-               <a class="link_footer" href="https://facebook.com/"> <img src="face.png"> FACEBOOK</a>
-        </div>
-    </footer>
+  <section class="book">
+    <img src="livro5.png" alt="Livro 5">
+    <h2>"O pequeno Príncipe"</h2>
+    <p>Autor: Antoine de Saint </p>
+    <p>Gênero: Drama</p>
+    <p>Editora: Grupo Companhia das Letras</p>
+    <p>Sinopse: "A Pequena Garota encontra o excêntrico Aviador, que a introduz ao mágico mundo do Pequeno Príncipe. Neste mundo em que tudo é possível, a Garota aprende a redescobrir sua infância."</p>
+    <br>
+    <button class="buttonadquirir">Adquirir</button>
+</section>
+<section class="book">
+    <img src="livro6.png" alt="Livro 6">
+    <h2>"VADEMECUM 2019"</h2>
+    <p>Autor: Fernanda Marinela</p>
+    <p>Gênero: Direito</p>
+    <p>Editora: Saraiva Jur</p>
+    <p>Sinopse: "O Vade Mecum tradicional é amplamente utilizado durante a graduação, na prática jurídica e nos estudos da área. Nele, são encontradas as principais leis e normas de diversas vertentes do Direito. Além disso, costuma incluir súmulas, enunciados e jurisprudências relevantes."</p>
+    <br>
+    <button class="buttonadquirir">Adquirir</button>
+</section>
+<section class="book">
+    <img src="livro7.png" alt="Livro 7">
+    <h2>"O Banquete"</h2>
+    <p>Autor: Platão</p>
+    <p>Gênero: Filosofia</p>
+    <p>Editora: ed.ufpa</p>
+    <p>Sinopse: "O Banquete, também conhecido como Simpósio, é um diálogo platônico escrito por volta de 380 a.C. Constitui-se basicamente de uma série de discursos sobre a natureza e as qualidades do amor. O Banquete é, juntamente com o Fedro, um dos dois diálogos de Platão em que o tema principal é o amor."</p>
+    <br>
+    <button class="buttonadquirir">Adquirir</button>
+</section>
+<section class="book">
+    <img src="livro8.png" alt="Livro 8">
+    <h2>"A Seleção"</h2>
+    <p>Autor: Kiera Cass</p>
+    <p>Gênero: Romance</p>
+    <p>Editora: Companhia das Letras</p>
+    <p>Sinopse: "Para trinta e cinco garotas, a Seleção é a chance de uma vida. É a oportunidade de ser alçada a um mundo de vestidos deslumbrantes e joias valiosas. De morar em um palácio, conquistar o coração do belo príncipe Maxon e um dia ser a rainha. America Singer, no entanto, estar entre as Selecionadas é um pesadelo."</p>
+    <br>
+    <button class="buttonadquirir">Adquirir</button>
+</section>
+<section class="book">
+    <img src="livro9.png" alt="Livro 9">
+    <h2>"Teoria Social"</h2>
+    <p>Autor: William Outhwaite</p>
+    <p>Gênero: Sociologia</p>
+    <p>Editora: Zahar</p>
+    <p>Sinopse: "Por que a religião é poderosa? De onde vem o capitalismo? Por que a sociedade é possível? A teoria social é uma ciência que formula e investiga grandes questões. Ferramenta inestimável, revela como diferentes disciplinas se associam e de que forma podemos usá-las para melhor compreender o mundo em que vivemos."</p>
+    <br>
+    <button class="buttonadquirir">Adquirir</button>
+</section>
+</main>
 </body>
+
+    <footer>
+        <span>
+          <h1>Contate-nos</h1>
+          <p>Entre contato conosco por estes meios</p>
+        </span>
+        <div>
+          <a target="_blank" href="https://web.whatsapp.com/">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>WhatsApp</p>
+          </a>
+          <a target="_blank" href="https://instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+          </a>
+          <a target="_blank" href="https://gmail.com/">
+            <i class="fa-solid fa-at"></i>
+            <p>Gmail</p>
+          </a>
+          <a target="_blank" href="https://facebook.com/">
+            <i class="fa-brands fa-facebook"></i>
+            <p>Facebook</p>
+          </a>
+        </div>
+      </footer>
+    
+      <script>
+        function processPayment(method) {
+          alert(`Pagamento via ${method} processado com sucesso!`);
+        }
+      </script>
+
 </html>
