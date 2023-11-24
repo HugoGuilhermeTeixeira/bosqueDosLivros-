@@ -10,43 +10,79 @@ body {
     background-color: white;
     }
 
-.header {
-  padding: 2%;
-  background-color: aquamarine;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-a:hover {
-color: grey;
-text-decoration: underline;
-text-underline-offset: 1rem;
-text-decoration-color: rgb(181, 181, 181);
-}
-
-.header__link {
- text-decoration: none;
- color: black;
- font-family:'Rajdhani',sans-serif ;
- font-size: 18px;
-}
-
-.header__link__sign {
-  font-family:'Rajdhani',sans-serif ;
-  font-size: 18px;
-  color: black;
-  background-color: white;
-  text-decoration: none;
-  width: 100px;
-  text-align: center;
-  border-radius: 16px;
-  font-size: 15px;
-  font-weight: 300px;
-  padding: 10px 0;
-
-}
-
+    .header {
+        padding: 10px 25px;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      
+        position: sticky;
+        width: 100%;
+        top: 0;
+        z-index: 9999;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .logo i {
+        font-size: 25px;
+      }
+      
+      .navigations {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+      
+      .header__link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: #02aa72;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 0.5s;
+      }
+      
+      .header__link:hover {
+        color: #000;
+      }
+      
+      #focused {
+        color: #fff;
+        background-color: #000;
+        padding: 8px 12px;
+        border-radius: 999px;
+      }
+      
+      .header_link_sign {
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        width: 100px;
+        text-align: center;
+        border-radius: 999px;
+        font-size: 15px;
+        font-weight: 100;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+      
+        transition: all 0.5s;
+      }
+      
+      .header_link_sign:hover {
+        background-color: #22eda9;
+        color: #000;
+      }
+      
 .apresentacao {
  padding: 4% 30%;
  width: 500px;
@@ -60,7 +96,7 @@ text-decoration-color: rgb(181, 181, 181);
 
 .titulo {
   font-family: 'Cinzel', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .login {
@@ -108,40 +144,56 @@ text-decoration-color: rgb(181, 181, 181);
   margin: 10%;
 }
 
-.geral_footer {
-  justify-content: center;
-  padding: 1% 0 1% 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  max-width: 100%;
-  background-color: black; 
-  align-items: center;
-  place-items: center;
-}
 
-.footer_div {
-  display: flex;
-  justify-content: space-between;
-  padding: 1%;
-  margin: 0;
-  text-align: center;
-  align-items: center;
-
-}
-
-.link_footer {
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-family:'Rajdhani',sans-serif ;
-  font-size: 18px;
-  place-items: center;
-}
-
-
-img {
- width: 4%;
- height: 4%;
-}
+.card-footer {
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #000000;
+    padding: 15px 25px;
+  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer h1 {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  
+  footer p {
+    color: #fff;
+  }
+  footer div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  footer a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+    font-size: 1.3rem;
+    color: #fff;
+  
+    cursor: pointer;
+    text-decoration-line: none;
+  }
+  
+  footer a:hover p {
+    text-decoration-line: underline;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .header__link {
+      display: none;
+    }
+    .card-body {
+      grid-template-columns: 1fr;
+    }
+  }
