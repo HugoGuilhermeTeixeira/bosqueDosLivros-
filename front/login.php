@@ -9,7 +9,7 @@ include('excecoes.php');
     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -38,7 +38,7 @@ include('excecoes.php');
             <input class= "login_caixa" type="text" id="username" name="username" required><br><br>
             <label class="login_info" for="password"> SENHA:</label>
             <input class="login_caixa" type="password" id="password" name="password" required><br><br>
-            <input class= "botao__entrar" type="submit" value="ENTRAR">
+            <button>ENTRAR</button>
           </div>
        </form>
     </main>
