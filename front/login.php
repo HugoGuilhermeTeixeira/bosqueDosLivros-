@@ -4,19 +4,32 @@ include('excecoes.php');
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script
+    src="https://kit.fontawesome.com/ea97a3051d.js"
+    crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header class="header">
-        <h3 class="titulo">BOSQUE DOS LIVROS</h3>
-        <a class="header__link" href="#about">HOME</a>
-        <a class="header__link"  href="#experience">SOBRE NÓS</a>
-        <a class="header__link" href="#projects">CONTATOS</a>
-        <a class="header__link__sign" type="submit" href="#signup">SIGN UP</a>
-    </header>
+        <span class="logo">
+          <i class="fa-solid fa-book-bookmark"></i>
+          <h3 class="titulo">BOSQUE DOS LIVROS</h3>
+        </span>
+        <div class="navigations">
+          <a id="focused" class="header__link" href="#about">
+            <i class="fa-solid fa-house"></i>HOME
+          </a>
+          <a class="header__link" href="#experience">
+            <i class="fa-solid fa-address-card"></i>SOBRE NÓS</a
+          >
+          <a class="header__link" href="#projects">
+            <i class="fa-solid fa-envelope"></i>CONTATOS</a>
+        </div>
+        <a class="header_link_sign" type="submit" href="#signup"> SIGN UP </a>
+      </header>
     <main class="apresentacao">
         <h1 class= "login">FAÇA SEU LOGIN</h1>
         <form method="post" action="Login.aspx">
@@ -29,13 +42,35 @@ include('excecoes.php');
           </div>
        </form>
     </main>
-    <footer class="geral_footer">
-        <div class="footer_div"> 
-            <a class="link_footer" href="https://web.whatsapp.com/"> <img src="WHATS.png"> WHATSAPP</a>
-             <a class="link_footer" href="https://instagram.com/"> <img src="insta.png"> INSTAGRAM</a>
-              <a class="link_footer" href="https://gmail.com/"> <img src="gmail.png"> GMAIL</a>
-               <a class="link_footer" href="https://facebook.com/"> <img src="face.png"> FACEBOOK</a>
+    <footer>
+        <span>
+          <h1>Contate-nos</h1>
+          <p>Entre contato conosco por estes meios</p>
+        </span>
+        <div>
+          <a target="_blank" href="https://web.whatsapp.com/">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>WhatsApp</p>
+          </a>
+          <a target="_blank" href="https://instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+          </a>
+          <a target="_blank" href="https://gmail.com/">
+            <i class="fa-solid fa-at"></i>
+            <p>Gmail</p>
+          </a>
+          <a target="_blank" href="https://facebook.com/">
+            <i class="fa-brands fa-facebook"></i>
+            <p>Facebook</p>
+          </a>
         </div>
-    </footer>
+      </footer>
+
+      <script>
+        function processPayment(method) {
+          alert(`Pagamento via ${method} processado com sucesso!`);
+        }
+      </script>
 </body>
 </html>
