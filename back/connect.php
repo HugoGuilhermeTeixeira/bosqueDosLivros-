@@ -1,13 +1,14 @@
 <?php
 
-$sevidor = "localhost";
+$servidor = "localhost";
 $dbusuario = "root";
 $dbsenha = "";
-$dbname = "bosqueDosLivros";
+$dbname = "bosquedoslivros";
 
-$mysqli = new mysqli($servername, $username, $password, $dbname);
+$mysqli = new mysqli($servidor, $dbusuario, $dbsenha, $dbname);
 
 if ($mysqli->connect_error) {
     die("Falha na conexão: " . $mysqli->connect_error);
+}
 
 ?>

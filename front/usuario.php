@@ -2,7 +2,7 @@
 include('protect.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <script src="https://kit.fontawesome.com/ea97a3051d.js"
     crossorigin="anonymous"></script>

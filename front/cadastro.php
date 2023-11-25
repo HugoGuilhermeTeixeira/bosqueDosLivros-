@@ -1,3 +1,6 @@
+<?php
+include('../back/cadastro.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
