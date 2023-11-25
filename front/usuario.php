@@ -20,16 +20,15 @@ include('protect.php');
           <h3 class="titulo">BOSQUE DOS LIVROS</h3>
         </span>
         <div class="navigations">
-          <a id="focused" class="header__link" href="#about">
+        <a id="focused" class="header__link" href="index.html">
             <i class="fa-solid fa-house"></i>HOME
           </a>
           <a class="header__link" href="#experience">
             <i class="fa-solid fa-address-card"></i>SOBRE NÓS</a
           >
-          <a class="header__link" href="#projects">
-            <i class="fa-solid fa-envelope"></i>CONTATOS</a>
-        </div>
-        <a class="header_link_sign" type="submit" href="#signup"> SIGN OUT </a>
+          <a class="header__link" href="../index.html#contatos">
+            <i class="fa-solid fa-envelope"></i>CONTATOS</a
+          >
       </header>
 
     <div class="user-page">
