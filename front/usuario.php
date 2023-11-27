@@ -1,3 +1,24 @@
+<?php
+if(isset($_POST['submit']))
+{
+
+    include_once('..//back/usuario.php');
+
+    $titulo = $_POST['titulo'];
+    $autor = $_POST['autor'];
+    $editora = $_POST['editora'];
+    $genero = $_POST['genero'];
+    $sinopse = $_POST['sinopse'];
+  
+
+    $result = mysqli_query($conexao, "INSERT INTO livros(titulo,autor,editora,genero,sinopse) 
+    VALUES ('$titulo','$autor','$editora','$genero','$sinopse')");
+
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -91,7 +112,7 @@
       <label for="author">Sinopse:</label>
       <input type="text" id="Sinopse" placeholder="Digite a Sinopse" required><br>
 
-      <button type="button">CADASTRAR</button>
+      <button type="button" name="submit">CADASTRAR</button>
     </form>
   </div>
 

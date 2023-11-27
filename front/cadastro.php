@@ -1,5 +1,35 @@
 <?php
-include('../back/cadastro.php');
+if (isset($_POST['submit'])) {
+    include("..//back/connect.php");
+
+    $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
+    $email = $_POST['email'];
+    $cpf = $_POST['cpf'];
+    $nasc = $_POST['nasc'];
+
+    // Validação e sanitização dos dados (exemplo)
+    $nome = mysqli_real_escape_string($conexao, $nome);
+    $senha = mysqli_real_escape_string($conexao, $senha);
+    $email = mysqli_real_escape_string($conexao, $email);
+    $cpf = mysqli_real_escape_string($conexao, $cpf);
+    $nasc = mysqli_real_escape_string($conexao, $nasc);
+
+    // Hash da senha (exemplo)
+    $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+
+    try {
+        // Utilização de prepared statements
+        $stmt = mysqli_prepare($conexao, "INSERT INTO usuarios(nome, senha, email, cpf, nasc) VALUES (?, ?, ?, ?, ?)");
+        mysqli_stmt_bind_param($stmt, "sssss", $nome, $senhaHash, $email, $cpf, $nasc);
+        mysqli_stmt_execute($stmt);
+
+        header('Location: login.php');
+    } catch (Exception $e) {
+        // Tratamento de erros
+        echo "Ocorreu um erro ao cadastrar o usuário: " . $e->getMessage();
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -9,7 +39,7 @@ include('../back/cadastro.php');
     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="styleCadastros.css">
     <title>Cadastro</title>
 </head>
 <body>
@@ -34,13 +64,13 @@ include('../back/cadastro.php');
       </header>
         <div class="box">
             <h1 class="cadastro">CADASTRE-SE</h1>
-            <form action="connect.php" method="post">
+            <form action="cadastro.php" method="post">
                 <input type="text" name="nome" class="nome" placeholder="Nome">
                 <input type="text" name="cpf" class="cpf" placeholder="CPF">
                 <input type="date" name="nasc" class="nasc" placeholder="DATA DE NASCIMENTO">
                 <input type="text" name="email" class="email" placeholder="Email">
                 <input type="password" name="senha" class="senha" placeholder="Senha">
-                <button>CADASTRAR</button>
+                <button name="submit">CADASTRAR</button>
             </form>
         </div>
       </main> 

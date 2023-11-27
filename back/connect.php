@@ -5,10 +5,10 @@ $dbusuario = "root";
 $dbsenha = "";
 $dbname = "bosquedoslivros";
 
-$mysqli = new mysqli($servidor, $dbusuario, $dbsenha, $dbname);
+$conexao = new mysqli($servidor, $dbusuario, $dbsenha, $dbname);
 
-if ($mysqli->connect_error) {
-    die("Falha na conexão: " . $mysqli->connect_error);
+if ($conexao->connect_error) {
+    die("Falha na conexão: " . $conexao->connect_error);
 }
 
 ?>
