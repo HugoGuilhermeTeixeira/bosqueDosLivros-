@@ -38,7 +38,7 @@ if(isset($_POST['submit']))
   <script src="https://kit.fontawesome.com/ea97a3051d.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="usuario.css">
+  <link rel="stylesheet" href="teste.css">
   <link rel="stylesheet" type="text/css" href="carousel.css"> <!-- Adicionando o CSS para o carrossel -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <title>usuario</title>
@@ -116,51 +116,43 @@ if(isset($_POST['submit']))
     </form>
   </div>
 
-  
+  <h1 class="titulo3"> ESTADOS QUE MAIS DOAM LIVROS: </h1>
+  <br>
+
+  <div class="pie-chart-container">
+    <canvas id="pieChart" width="400" height="400"></canvas>
+  </div>
   
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      
-    const ctx  = docomentById('pieChart').getContext('2d');
-    // Dados de exemplo (substitua pelos seus dados reais)
-    var generos = ["Ficção", "Romance", "Mistério", "Fantasia"];
-    var quantidades = [30, 20, 15, 35];
+  var pieData = {
+    labels: ['São Paulo', 'Rio de Janeiro', 'Rio Grande do Norte', 'Outros Estados'],
+    datasets: [{
+      data: [40, 30, 20, 10],
+      backgroundColor: [
+        '#7FFFD4',
+        '#00FFFF',
+        '#5F9EA0',
+        '#008B8B'
+      ],
+    }]
+  };
 
-    var pieChart = new Chart(ctx, {
-      type: 'pie',
-      data: {
-        labels: generos,
-        datasets: [{
-          data: quantidades,
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.7)',
-            'rgba(54, 162, 235, 0.7)',
-            'rgba(255, 206, 86, 0.7)',
-            'rgba(75, 192, 192, 0.7)',
-            // Adicione mais cores conforme necessário
-          ],
-          borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            // Adicione mais cores conforme necessário
-          ],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        legend: {
-          position: 'bottom',
-        }
-      }
-    });
+  var pieOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: {
+      position: 'bottom',
+    },
+  };
+
+  var ctx = document.getElementById('pieChart').getContext('2d');
+  var pieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: pieData,
+    options: pieOptions
   });
-  </script>
-<canvas id="pieChart" width="400" height="400"></canvas>
-</body>
+</script>
+<br>
 
 <footer>
   <span>
