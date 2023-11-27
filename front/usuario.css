@@ -50,6 +50,12 @@
     font-family: 'Cinzel', sans-serif;
     font-size: 25px;
   }
+
+  .titulo3{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
   
   .header__link {
     display: flex;
