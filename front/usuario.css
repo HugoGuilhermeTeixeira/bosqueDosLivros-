@@ -45,6 +45,11 @@
     align-items: center;
     gap: 25px;
   }
+
+  .titulo {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 25px;
+  }
   
   .header__link {
     display: flex;
@@ -89,12 +94,14 @@
   }
   
   .user-page {
+    align-content: center;
     padding: 20px;
     max-width: 800px;
     margin: 50px auto;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    text-align: center;
   }
   
   .book-list {
@@ -118,6 +125,10 @@
   }
   
   .add-book-form {
+    padding: 5%;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
   }
   
@@ -128,12 +139,13 @@
   }
   
   .add-book-form input {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
   }
   
   .add-book-form button {
@@ -147,53 +159,54 @@
   }
   
   .add-book-form button:hover {
-    background-color: #02aa72;
+    background-color: aquamarine;
   }
 
-      .card-footer {
-        padding: 15px 0;
-        text-align: center;
-      }
-      
-      footer {
-        background-color: #000000;
-        padding: 15px 25px;
-      
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      footer h1 {
-        color: #fff;
-        font-size: 1.3rem;
-      }
-      
-      footer p {
-        color: #fff;
-      }
-      footer div {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-      }
-      
-      footer a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      
-        font-size: 1.3rem;
-        color: #fff;
-      
-        cursor: pointer;
-        text-decoration-line: none;
-      }
-      
-      footer a:hover p {
-        text-decoration-line: underline;
-      }
-      
+  .card-footer {
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #000000;
+    padding: 15px 25px;
+  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer h1 {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  
+  footer p {
+    color: #fff;
+  }
+  footer div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  footer a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+    font-size: 1.3rem;
+    color: #fff;
+  
+    cursor: pointer;
+    text-decoration-line: none;
+  }
+  
+  footer a:hover p {
+    text-decoration-line: underline;
+  }
+
+
       @media screen and (max-width: 750px) {
         .header__link {
           display: none;
@@ -203,67 +216,19 @@
         }
       }
 
-.carousel {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-}
-
-.carousel img {
-  width: 100%; 
-  margin-right: 15px; 
-}
-
-
-      .card-footer {
-        padding: 15px 0;
-        text-align: center;
+      #livrosCarousel {
+        max-width: 50%; 
+        margin: auto; 
+        align-content: center;
       }
       
-      footer {
-        background-color: #000000;
-        padding: 15px 25px;
-      
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      footer h1 {
-        color: #fff;
-        font-size: 1.3rem;
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: aquamarine; 
       }
       
-      footer p {
-        color: #fff;
-      }
-      footer div {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-      }
-      
-      footer a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      
-        font-size: 1.3rem;
-        color: #fff;
-      
-        cursor: pointer;
-        text-decoration-line: none;
-      }
-      
-      footer a:hover p {
-        text-decoration-line: underline;
-      }
-      
-      @media screen and (max-width: 750px) {
-        .header__link {
-          display: none;
-        }
-        .card-body {
-          grid-template-columns: 1fr;
-        }
+      .livro-img {
+        max-width: 100%; 
+        margin: auto; 
+        display: flex; 
       }
