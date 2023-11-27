@@ -116,13 +116,16 @@ if(isset($_POST['submit']))
     </form>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  
   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      
+    const ctx  = docomentById('pieChart').getContext('2d');
     // Dados de exemplo (substitua pelos seus dados reais)
     var generos = ["Ficção", "Romance", "Mistério", "Fantasia"];
     var quantidades = [30, 20, 15, 35];
 
-    var ctx = document.getElementById('pieChart').getContext('2d');
     var pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
@@ -154,10 +157,11 @@ if(isset($_POST['submit']))
         }
       }
     });
+  });
   </script>
-
-</body>
 <canvas id="pieChart" width="400" height="400"></canvas>
+</body>
+
 <footer>
   <span>
     <h1>Contate-nos</h1>
