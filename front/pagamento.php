@@ -7,7 +7,7 @@
     ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="teste.css" />
+    <link rel="stylesheet" href="stylePagamentos.css" />
     <title>Página de Pagamento</title>
   </head>
   <body>
