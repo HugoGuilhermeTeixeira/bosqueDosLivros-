@@ -10,7 +10,7 @@ include('../back/exceptions.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header class="header">
@@ -35,7 +35,7 @@ include('../back/exceptions.php');
         <h1 class= "login">FAÇA SEU LOGIN</h1>
         <form method="post" action="Login.aspx">
             <div class="total">
-            <label class="login_info" for="username"> E-mail</label>
+            <label class="login_info" for="username"> E-MAIL</label>
             <input class= "login_caixa" type="text" id="username" name="username" required><br><br>
             <label class="login_info" for="password"> SENHA</label>
             <input class="login_caixa" type="password" id="password" name="password" required><br><br>
