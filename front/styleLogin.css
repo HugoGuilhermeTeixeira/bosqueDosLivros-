@@ -108,11 +108,13 @@ body {
 
 .login_caixa {
   font-family: 'Rajdhani',sans-serif ;
+  font-size: 25px;
+  color: black;
   background-color: aquamarine;
   width: 500px;
   text-align: center;
   border-radius: 16px;
-  font-weight: 100;
+  font-weight: bold;
   padding: 10px 0;
   border: 5px solid aquamarine;
 
